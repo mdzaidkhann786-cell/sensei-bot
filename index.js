@@ -1,6 +1,10 @@
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const fs = require('fs');
 require('dotenv').config();
+console.log("--- Token Debug ---");
+console.log("Token exists:", process.env.TOKEN ? "Yes" : "No");
+console.log("Token length:", process.env.TOKEN ? process.env.TOKEN.length : 0);
+console.log("Raw Token:", JSON.stringify(process.env.TOKEN));
 const config = require('./config.json');
 
 const client = new Client({
